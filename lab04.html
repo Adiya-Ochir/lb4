@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/Project4/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CS142 Project #4</title>
+    </head>
+    <body>
+        <h1>CS142 Project #4</h1>
+        <p>
+            If you can see this message it means your simple Node.js web server is working!
+        </p>
+        <p>
+            Your solutions to project #4 should be served by this web server from the following files
+            that can be clicked on to test in your browser:
+        </p>
+        <ul>
+            <li>Problem #1 - Getting started - <a href="http://127.0.0.1:5500/Project4/getting-started.html">getting-started.html</a></li>
+            <li>Problem #2 - States display component - <a href="http://127.0.0.1:5500/Project4/p2.html">p2.html</a></li>
+            <li>Problem #3 - Layout Personalization - <a href="http://127.0.0.1:5500/Project4/p2.html">p2.html</a></li>
+            <li>Problem #4 - Dynamic view switching - <a href="http://127.0.0.1:5500/Project4/p4.html">p4.html</a></li>
+            <li>Problem #5 - Single page app - <a href="http://127.0.0.1:5500/Project4/p5.html">p5.html</a></li>
+        </ul>
+        <script type="text/javascript">
+            //<![CDATA[
+            // JavaScript frameworks have problems using the file protocol.
+            // Since the project's files are accessible using either the file or
+            // http protocols we warn the user if they are not using http.
+            if(window.location.protocol !== 'http:') {
+                var msg = "Project #4 files must be accessed with the http protocol (not from local files)."  +
+                                "\nUse the URL http://localhost:3000";
+                console.error(msg);
+                alert(msg);
+            }l
+            //]]>
+        </script>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
